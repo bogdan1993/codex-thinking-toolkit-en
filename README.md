@@ -1,5 +1,14 @@
 # Codex Thinking Toolkit — English
 
+## Cloud editions: Claude and ChatGPT
+
+| Platform | Setup | Ready-to-upload package |
+|---|---|---|
+| Claude cloud / Claude Code | [Claude guide](adapters/claude/README.md) | [thinking-toolkit-en.zip](https://github.com/bogdan1993/codex-thinking-toolkit-en/raw/refs/heads/main/adapters/claude/thinking-toolkit-en.zip) |
+| ChatGPT Cloud Projects | [ChatGPT guide](adapters/chatgpt/README.md) | [ChatGPT package](https://github.com/bogdan1993/codex-thinking-toolkit-en/raw/refs/heads/main/adapters/chatgpt/thinking-toolkit-en-chatgpt.zip) |
+
+Claude uses one skill with 20 referenced modes. ChatGPT uses project instructions and an uploaded command library. Both cloud packages are separate from the local Codex installer. Read the platform guide before uploading; uploading a whole repository is not installation. Live account behavior has not been tested.
+
 **20 composable skills for research, critical thinking, decisions, planning and communication.** Each skill is a small instruction workflow you can invoke individually or combine with others.
 
 English edition of [codex-thinking-toolkit](https://github.com/bogdan1993/codex-thinking-toolkit). Created by **Bogdan Pădurariu with Codex**. MIT licensed. This is an independent project, not an official OpenAI product.

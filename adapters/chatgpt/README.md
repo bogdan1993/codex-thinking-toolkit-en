@@ -1,0 +1,13 @@
+# Use in ChatGPT Cloud Projects
+
+1. Create or open a ChatGPT Project.
+2. Paste PROJECT_INSTRUCTIONS.md into the project's instructions. Uploading this file alone does not configure instructions.
+3. Add COMMANDS.md to the project's Sources/files.
+4. Start a new chat inside that project and try `/VERIFY Check whether increasing from 80 to 100 is 25%.`
+5. Try `/COMPARE /DECIDE` with real options and constraints. If the library cannot be retrieved, attach the relevant section directly.
+
+You can also paste the instructions into an ordinary chat and attach the command library for that conversation. This does not install a plugin, register slash commands or modify global personalization. No Python installer is needed for this cloud adapter. Account capabilities and workspace policies govern browsing, analysis and file creation. The supplied workflows do not grant new tools or permissions.
+
+Only the necessary files are packaged; there is no personal corpus or API credential. Existing unrelated project instructions should be preserved and reconciled. Select one language edition in a project to avoid contradictory defaults.
+
+Official setup basis, checked 2026-11-02: [ChatGPT Projects](https://learn.chatgpt.com/docs/projects). The project instructions configure behavior; the uploaded library supplies workflow details. Live account upload/retrieval and reasoning behavior have not been tested by the package checks.

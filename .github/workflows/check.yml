@@ -15,3 +15,4 @@ jobs:
           python-version: ${{ matrix.python }}
       - run: python -B -m unittest discover -s tests -v
       - run: python install.py --check --dest "${{ runner.temp }}/thinking-toolkit-skills"
+      - run: python build_adapters.py --check
