@@ -1,5 +1,11 @@
 # Codex Thinking Toolkit — English
 
+## Tested in ChatGPT Cloud
+
+Installed and tested in a real ChatGPT account on **November 2, 2026**, using Project instructions and the uploaded command library. Representative checks passed: source retrieval, the five VERIFY verdict labels, 80 → 100 = 25% growth, UNCONFIRMED for an unsupported claim, comparison and conditional recommendation under a budget constraint, and an additional hard-budget eligibility check.
+
+This is a live smoke test of selected workflows, not a benchmark of all 20 modes. The initial response exceeded the requested word limit; concise formatting is not universally guaranteed. The Claude adapter has not been tested in a live Claude account. See [test scope](docs/CLOUD_TESTS.md).
+
 ## Cloud editions: Claude and ChatGPT
 
 | Platform | Setup | Ready-to-upload package |
@@ -7,7 +13,7 @@
 | Claude cloud / Claude Code | [Claude guide](adapters/claude/README.md) | [thinking-toolkit-en.zip](https://github.com/bogdan1993/codex-thinking-toolkit-en/raw/refs/heads/main/adapters/claude/thinking-toolkit-en.zip) |
 | ChatGPT Cloud Projects | [ChatGPT guide](adapters/chatgpt/README.md) | [ChatGPT package](https://github.com/bogdan1993/codex-thinking-toolkit-en/raw/refs/heads/main/adapters/chatgpt/thinking-toolkit-en-chatgpt.zip) |
 
-Claude uses one skill with 20 referenced modes. ChatGPT uses project instructions and an uploaded command library. Both cloud packages are separate from the local Codex installer. Read the platform guide before uploading; uploading a whole repository is not installation. Live account behavior has not been tested.
+Claude uses one skill with 20 referenced modes. ChatGPT uses project instructions and an uploaded command library. Both cloud packages are separate from the local Codex installer. Read the platform guide before uploading; uploading a whole repository is not installation. The ChatGPT adapter has been tested in a real account; live Claude testing remains pending.
 
 **20 composable skills for research, critical thinking, decisions, planning and communication.** Each skill is a small instruction workflow you can invoke individually or combine with others.
 

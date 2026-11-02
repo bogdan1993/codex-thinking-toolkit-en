@@ -12,4 +12,4 @@ Copy the **thinking-toolkit-en** folder into `~/.claude/skills/` (personal) or `
 
 Checked 2026-11-02: [Use Skills in Claude](https://support.claude.com/en/articles/12512180-use-skills-in-claude), [Create custom skills](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills), [Claude Code skills](https://code.claude.com/docs/en/skills).
 
-The ZIP contains one skill folder at its root, with SKILL.md, all 20 references and LICENSE. Local packaging checks verify content, reference links and reproducibility. Account upload, invocation and model behavior have not been tested live. Tool availability and organization policy can affect use.
+The ZIP contains one skill folder at its root, with SKILL.md, all 20 references and LICENSE. Local packaging checks verify content, reference links and reproducibility. Claude account upload, invocation and model behavior have not been tested live. Tool availability and organization policy can affect use.

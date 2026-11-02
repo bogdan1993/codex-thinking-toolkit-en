@@ -10,4 +10,8 @@ You can also paste the instructions into an ordinary chat and attach the command
 
 Only the necessary files are packaged; there is no personal corpus or API credential. Existing unrelated project instructions should be preserved and reconciled. Select one language edition in a project to avoid contradictory defaults.
 
-Official setup basis, checked 2026-11-02: [ChatGPT Projects](https://learn.chatgpt.com/docs/projects). The project instructions configure behavior; the uploaded library supplies workflow details. Live account upload/retrieval and reasoning behavior have not been tested by the package checks.
+Official setup basis, checked 2026-11-02: [ChatGPT Projects](https://learn.chatgpt.com/docs/projects). The project instructions configure behavior; the uploaded library supplies workflow details. The adapter was installed and smoke-tested in a real ChatGPT Project on November 2, 2026. Source retrieval and representative VERIFY/COMPARE/DECIDE scenarios passed; a separate hard-budget boundary check passed. The first response exceeded the requested word limit. Package checks do not establish general reasoning quality or coverage of all 20 workflows.
+
+## Live test scope — November 2, 2026
+
+The project instructions were saved and the command library was added through Sources > Paste text (the UI named it COMMANDS.md.txt). VERIFY, COMPARE and DECIDE were tested using fictional data, including an unsupported claim and a hard-budget boundary. This is not full coverage of all 20 modes. The Claude adapter remains untested in a live Claude account.

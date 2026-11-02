@@ -121,7 +121,7 @@ You can also paste the instructions into an ordinary chat and attach the command
 
 Only the necessary files are packaged; there is no personal corpus or API credential. Existing unrelated project instructions should be preserved and reconciled. Select one language edition in a project to avoid contradictory defaults.
 
-Official setup basis, checked 2026-11-02: [ChatGPT Projects](https://learn.chatgpt.com/docs/projects). The project instructions configure behavior; the uploaded library supplies workflow details. Live account upload/retrieval and reasoning behavior have not been tested by the package checks.
+Official setup basis, checked 2026-11-02: [ChatGPT Projects](https://learn.chatgpt.com/docs/projects). The project instructions configure behavior; the uploaded library supplies workflow details. The adapter was installed and smoke-tested in a real ChatGPT Project on November 2, 2026. Source retrieval and representative VERIFY/COMPARE/DECIDE scenarios passed; a separate hard-budget boundary check passed. The first response exceeded the requested word limit. Package checks do not establish general reasoning quality or coverage of all 20 workflows.
 '''
     else:
         guide = f'''# Utilizare în ChatGPT Cloud Projects
@@ -136,7 +136,7 @@ Poți folosi și un chat obișnuit: lipește instrucțiunile și atașează bibl
 
 Nu sunt incluse corpus personal sau credențiale. Păstrează și reconciliază instrucțiunile relevante deja existente ale proiectului. Alege o singură ediție lingvistică pentru același proiect.
 
-Bază oficială de configurare, verificată la 2026-11-02: [ChatGPT Projects](https://learn.chatgpt.com/docs/projects). Instrucțiunile proiectului configurează comportamentul; biblioteca încărcată oferă workflow-urile. Încărcarea și recuperarea fișierelor în contul real și calitatea raționamentului nu au fost testate de verificările pachetului.
+Bază oficială de configurare, verificată la 2026-11-02: [ChatGPT Projects](https://learn.chatgpt.com/docs/projects). Instrucțiunile proiectului configurează comportamentul; biblioteca încărcată oferă workflow-urile. Adaptarea a fost instalată și testată într-un Project ChatGPT real la 2 noiembrie 2026. Accesul la bibliotecă și scenariile reprezentative au fost verificate în cont. Testele automate ale pachetului nu demonstrează calitatea generală a raționamentului sau funcționarea fiecărui workflow.
 '''
     if instagram:
         guide += '''
@@ -153,6 +153,7 @@ python skills/ig-audit/audit.py posts.csv --json
 
 Execuția depinde de instrumentele sesiunii; nu afirma că un helper a rulat doar pentru că arhiva a fost încărcată. Dacă execuția sau extragerea arhivei nu sunt disponibile, folosește biblioteca și REFERENCE.md pentru o evaluare calitativă. Metricile Instagram necesită surse reale; lipsa accesului rămâne lipsă de dovezi. Voice template opțional: folosește informațiile cunoscute ori un profil provizoriu explicit. Caruselele și videoclipurile necesită un instrument real de randare pentru exporturi finale.
 '''
+    guide += "\n## Live test scope — November 2, 2026\n\nThe project instructions were saved and the command library was added through Sources > Paste text (the UI named it COMMANDS.md.txt). VERIFY, COMPARE and DECIDE were tested using fictional data, including an unsupported claim and a hard-budget boundary. This is not full coverage of all 20 modes. The Claude adapter remains untested in a live Claude account.\n"
     put("chatgpt/README.md", guide)
     put("chatgpt/LICENSE", license_text)
     cloud_files = {path.removeprefix("chatgpt/"):value for path,value in output.items() if path.startswith("chatgpt/")}
@@ -203,7 +204,7 @@ Copiază folderul **{label}** în `~/.claude/skills/` (personal) sau în `.claud
 
 Checked 2026-11-02: [Use Skills in Claude](https://support.claude.com/en/articles/12512180-use-skills-in-claude), [Create custom skills](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills), [Claude Code skills](https://code.claude.com/docs/en/skills).
 
-The ZIP contains one skill folder at its root, with SKILL.md, all 20 references and LICENSE. Local packaging checks verify content, reference links and reproducibility. Account upload, invocation and model behavior have not been tested live. Tool availability and organization policy can affect use.
+The ZIP contains one skill folder at its root, with SKILL.md, all 20 references and LICENSE. Local packaging checks verify content, reference links and reproducibility. Claude account upload, invocation and model behavior have not been tested live. Tool availability and organization policy can affect use.
 '''
         put("claude/README.md", claude_guide)
     generated_manifest = {"schemaVersion":1,"sourceVersion":meta["version"],"language":lang,"modes":names,"files":{path:hashlib.sha256(value).hexdigest() for path,value in sorted(output.items())}}
